@@ -28,3 +28,4 @@ Thumbs.db
 
 # Logs
 *.log
+backend/data/tmdb_5000_movies.csv
