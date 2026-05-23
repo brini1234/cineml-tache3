@@ -1,0 +1,59 @@
+{
+  "date_execution": "2026-05-23 01:41:13",
+  "dataset": {
+    "n_train": 2380,
+    "n_test": 595,
+    "features": [
+      "log_budget",
+      "popularity",
+      "runtime",
+      "vote_average",
+      "vote_count",
+      "log_popularity",
+      "log_vote_count"
+    ]
+  },
+  "feature_importance_rf_top3": [
+    "log_vote_count",
+    "vote_count",
+    "log_budget"
+  ],
+  "feature_importance_xgb_top3": [
+    "vote_count",
+    "log_budget",
+    "vote_average"
+  ],
+  "stability_rf_std_rmse": 0.7911952145007621,
+  "stability_ada_std_rmse": 2.26595995938404,
+  "stability_xgb_std_rmse": 0.0,
+  "shapiro_pvalue": 4.191509502886865e-05,
+  "metrics": {
+    "random_forest": {
+      "rmse": 111.26337248744343,
+      "mae": 62.683851020021294,
+      "r2": 0.6501657593695966
+    },
+    "adaboost": {
+      "rmse": 133.49343142075227,
+      "mae": 72.93647808338962,
+      "r2": 0.5917644197767231
+    },
+    "xgboost": {
+      "rmse": 117.00599504373297,
+      "mae": 66.30128457794117,
+      "r2": 0.615313380132285
+    },
+    "decision_tree": {
+      "rmse": 142.04006548545982,
+      "mae": 82.43557991764706,
+      "r2": 0.4014949636550913
+    }
+  },
+  "best_model": "Random Forest",
+  "best_model_r2": 0.6502,
+  "best_rf_config": {
+    "n_estimators": 50,
+    "max_depth": "None",
+    "test_rmse": 110.54
+  }
+}
